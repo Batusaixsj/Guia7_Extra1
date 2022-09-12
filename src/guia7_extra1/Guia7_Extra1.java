@@ -1,22 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package guia7_extra1;
 
-/**
- *
- * @author MNXC04
- */
-public class Guia7_Extra1 {
+import Entidades.Cancion;
+import Servicios.ServicioCancion;
 
-    /**
-     * @param args the command line arguments
-     */
+public class Guia7_Extra1 {
     public static void main(String[] args) {
-        // TODO code application logic here
+        ServicioCancion sCancion = new ServicioCancion();
+        Cancion cancion1 = sCancion.crearCancion();
+        sCancion.mostrarCancion(cancion1);
+        
+        
     }
     
 }

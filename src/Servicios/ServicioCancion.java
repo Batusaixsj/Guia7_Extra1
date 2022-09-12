@@ -18,10 +18,10 @@ public class ServicioCancion {
     
     public Cancion crearCancion(){
         String ingCancion,ingAutor;
-        System.out.println("CREACION CANCION");
+        System.out.println("**** CREACION CANCION ****");
         System.out.print("Titulo Cancion: ");
         ingCancion =leer.next();
-        System.out.println("Autor Cancion: ");
+        System.out.print("Autor Cancion: ");
         ingAutor = leer.next();
         Cancion cancion1 = new Cancion(ingCancion,ingAutor);
           
@@ -29,6 +29,10 @@ public class ServicioCancion {
                 
     }
     
+    public void mostrarCancion(Cancion cancion1){
+        System.out.println(cancion1.toString());
+        
+    }
     
     
 }

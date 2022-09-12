@@ -48,6 +48,11 @@ public class Cancion {
     public void setAutor(String autor) {
         this.autor = autor;
     }
+
+    @Override
+    public String toString() {
+        return "**** Datos Cancion ****" + "\nTitulo: " + titulo + "\nAutor;" + autor;
+    }
     
     
     
