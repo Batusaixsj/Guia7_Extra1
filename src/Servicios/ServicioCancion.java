@@ -6,10 +6,29 @@
 
 package Servicios;
 
+import Entidades.Cancion;
+import java.util.Scanner;
+
 /**
  *
  * @author MNXC04
  */
 public class ServicioCancion {
+    Scanner leer = new Scanner(System.in).useDelimiter("\n");
+    
+    public Cancion crearCancion(){
+        String ingCancion,ingAutor;
+        System.out.println("CREACION CANCION");
+        System.out.print("Titulo Cancion: ");
+        ingCancion =leer.next();
+        System.out.println("Autor Cancion: ");
+        ingAutor = leer.next();
+        Cancion cancion1 = new Cancion(ingCancion,ingAutor);
+          
+        return cancion1;
+                
+    }
+    
+    
     
 }
